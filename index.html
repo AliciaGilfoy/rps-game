@@ -10,10 +10,53 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header class="bg-dark container-fluid">
+    <div class="row">
+      <div class="col-12 h1 text-center text-info p-2">Rock, Paper, Scissors!</div>
+      <div class="col-12 h3 text-center text-white p-2">Can you beat the computer?</div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row players-row">
+      <div class="col-4 player-card">
+        <div class="card player-one" style="width: 18rem;">
+          <img src="./fist.png" class="card-img-top" id="player-img" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Player One</h5>
+            <p class="card-text">Pick one <i class="fas fa-arrow-down"></i></p>
+            <div class="button-group">
+              <button type="button" class="btn btn-primary m-1" id="choose-rock">Rock</button>
+              <button type="button" class="btn btn-success m-1" id="choose-paper">Paper</button>
+              <button type="button" class="btn btn-danger m-1" id="choose-scissors">Scissors</button>
+              <button type="button" class="btn btn-warning m-1" id="choose-for-me">I can't decide!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 text-center result">
+        <h1 id="match-result"></h1>
+      </div>
+      <div class="col-4 player-card">
+        <div class="card player-computer" style="width: 18rem;">
+          <img src="./fist.png" class="card-img-top" id="computer-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Computer</h5>
+            <p class="card-text">Computer picks <i class="fas fa-arrow-down"></i></p>
+            <p class="card-text" id="computer-choice"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
