@@ -78,6 +78,7 @@ function drawMatch() {
   let randomPicture = str1.concat(computerPick)
   console.log(computerPick)
   document.getElementById("computer-img").classList.replace("card-image-top-ready", randomPicture)
+  document.getElementById("computer-choice").textContent = computerPick
 }
 // this determines the winner
 function drawWinner() {
@@ -89,6 +90,7 @@ function resetMatch() {
   document.getElementById("computer-img").classList.add("card-image-top-ready")
   document.getElementById("player-img").classList = ""
   document.getElementById("player-img").classList.add("card-image-top-ready")
+  document.getElementById("computer-choice").textContent = ""
 }
 // this keeps score after each match
 function keepScore() {
