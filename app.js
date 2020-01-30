@@ -50,6 +50,7 @@ function pickRock() {
   playerPickStatusElem = playerOneChoice
   drawMatch()
   drawWinner()
+  setTimeout(resetMatch, 3000)
   // drawWinner(playerPickStatusElem, computerPickStatusElem)
 }
 // on paper button click this brings up paper picture
@@ -63,6 +64,7 @@ function pickPaper() {
   playerPickStatusElem = playerOneChoice
   drawMatch()
   drawWinner()
+  setTimeout(resetMatch, 3000)
   // drawWinner(playerPickStatusElem, computerPickStatusElem)
 }
 // on scissors button click this brings up scissors picture
@@ -76,6 +78,7 @@ function pickScissors() {
   playerPickStatusElem = playerOneChoice
   drawMatch()
   drawWinner()
+  setTimeout(resetMatch, 3000)
   // drawWinner(playerPickStatusElem, computerPickStatusElem)
 }
 // on undecided button click this brings up a random picture
@@ -90,6 +93,7 @@ function pickRandom() {
   playerPickStatusElem = playerOneChoice
   drawMatch()
   drawWinner()
+  setTimeout(resetMatch, 2500)
   // drawWinner(playerPickStatusElem, computerPickStatusElem)
 }
 // after any player 1 button is clicked this makes the computer pick a random picture
