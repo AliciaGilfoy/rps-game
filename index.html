@@ -21,8 +21,8 @@
       <div class="col-12 h1 text-center text-info p-2">Rock, Paper, Scissors!</div>
       <div class="col-12 h3 text-center text-white p-2">Can you beat the computer?</div>
       <div class="col-12 h2 text-center text-success p-2">Score</div>
-      <div class="col-6 h2 text-center text-success p-2">Player 1 : <span id="player-one-score">0</span></div>
-      <div class="col-6 h2 text-center text-success p-2"> Computer : <span id="computer-score">0</span></div>
+      <div class="col-6 h2 text-center text-success p-2">Player 1 : <span id="player-one-score"></span></div>
+      <div class="col-6 h2 text-center text-success p-2"> Computer : <span id="computer-score"></span></div>
     </div>
   </header>
   <main class="container-fluid">
@@ -37,15 +37,16 @@
               <button type="button" class="btn btn-primary m-1" onclick="pickRock()">Rock</button>
               <button type="button" class="btn btn-success m-1" onclick="pickPaper()">Paper</button>
               <button type="button" class="btn btn-danger m-1" onclick="pickScissors()">Scissors</button>
-              <button type="button" class="btn btn-warning m-1" onclick="pickRandom()">I can't
+              <button type="button" class="btn btn-warning m-1 " onclick="pickRandom()">I can't
                 decide!</button>
             </div>
+            <p class="card-text" id="player-choice"></p>
           </div>
         </div>
       </div>
       <!-- input will or lose -->
       <div class="col-2 text-center result">
-        <h1 id="match-result"></h1>
+        <h1 id="match-result">.</h1>
         <button type="button" class="btn btn-info reset-button h1" onclick="resetMatch()">Next Round!</button>
       </div>
       <div class="col-4 player-card">

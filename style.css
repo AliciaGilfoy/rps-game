@@ -11,27 +11,31 @@ body{
 }
 
 .player-card{
-  background-color:white;
-  width: 150rem;
+  /* background-color:white; */
+  max-width: fit-content;
   height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em;
+  padding-top: 3em;
 }
 
 img{
   height: 20rem;
   width: 20rem;
+  border: none;
+  outline: none;
+
 }
 
 #computer-choice{
-  border: 3px solid black;
+  border: 1px solid black;
   width: fit-content;
   background-color: red;
   padding: .5em;
   color: white;
   font-weight: bold;
+  border-radius: .25rem;
 }
 .card-body{
   display: flex;
@@ -44,13 +48,14 @@ img{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent;
 }
 
 .button-group{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .result{
@@ -104,4 +109,8 @@ img{
   margin: 2rem;
   font-weight: normal;
   font-family: cursive;
+}
+
+#player-choice{
+  color: transparent;
 }
