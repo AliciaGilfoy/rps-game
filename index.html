@@ -20,34 +20,41 @@
     <div class="row">
       <div class="col-12 h1 text-center text-info p-2">Rock, Paper, Scissors!</div>
       <div class="col-12 h3 text-center text-white p-2">Can you beat the computer?</div>
+      <div class="col-12 h2 text-center text-success p-2">Score</div>
+      <div class="col-6 h2 text-center text-success p-2">Player 1 : <span id="player-one-score">0</span></div>
+      <div class="col-6 h2 text-center text-success p-2"> Computer : <span id="computer-score">0</span></div>
     </div>
   </header>
   <main class="container-fluid">
     <div class="row players-row">
       <div class="col-4 player-card">
         <div class="card player-one" style="width: 18rem;">
-          <img src="./fist.png" class="card-img-top" id="player-img" alt="...">
+          <img class="card-img-top card-image-top-ready" id="player-img">
           <div class="card-body text-center">
             <h5 class="card-title">Player One</h5>
             <p class="card-text">Pick one <i class="fas fa-arrow-down"></i></p>
             <div class="button-group">
-              <button type="button" class="btn btn-primary m-1" id="choose-rock">Rock</button>
-              <button type="button" class="btn btn-success m-1" id="choose-paper">Paper</button>
-              <button type="button" class="btn btn-danger m-1" id="choose-scissors">Scissors</button>
-              <button type="button" class="btn btn-warning m-1" id="choose-for-me">I can't decide!</button>
+              <button type="button" class="btn btn-primary m-1" onclick="pickRock()">Rock</button>
+              <button type="button" class="btn btn-success m-1" onclick="pickPaper()">Paper</button>
+              <button type="button" class="btn btn-danger m-1" onclick="pickScissors()">Scissors</button>
+              <button type="button" class="btn btn-warning m-1" onclick="pickRandom()">I can't
+                decide!</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- input will or lose -->
       <div class="col-2 text-center result">
         <h1 id="match-result"></h1>
+        <button type="button" class="btn btn-info reset-button h1" onclick="resetMatch()">Next Round!</button>
       </div>
       <div class="col-4 player-card">
         <div class="card player-computer" style="width: 18rem;">
-          <img src="./fist.png" class="card-img-top" id="computer-img" alt="...">
+          <img class="card-img-top card-image-top-ready" id="computer-img">
           <div class="card-body">
             <h5 class="card-title">Computer</h5>
             <p class="card-text">Computer picks <i class="fas fa-arrow-down"></i></p>
+            <!-- input computers random choice -->
             <p class="card-text" id="computer-choice"></p>
           </div>
         </div>

@@ -55,8 +55,53 @@ img{
 
 .result{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: aqua;
+}
+.card-image-top{
+  border: transparent;
+  outline: transparent;
+}
+
+.card-image-top-ready{
+  background-image: url(./fist.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: transparent;
+}
+
+.card-image-top-rock{
+  background-image: url(./rock.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: transparent;
+}
+
+.card-image-top-paper{
+  background-image: url(./paper.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: transparent;
+}
+
+.card-image-top-scissors{
+  background-image: url(./scissors.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: transparent;
+}
+
+.reset-button{
+  width: inherit;
+  padding: .2rem;
+  margin: 2rem;
+  font-weight: normal;
+  font-family: cursive;
 }
