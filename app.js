@@ -98,7 +98,7 @@ function pickRandom() {
 }
 // after any player 1 button is clicked this makes the computer pick a random picture
 function drawMatch() {
-  let pickIndex = Math.floor(Math.random() * 2)
+  let pickIndex = Math.floor(Math.random() * 3)
   let computerPick = choices[pickIndex].name
   let str1 = "card-image-top-"
   let randomPicture = str1.concat(computerPick)
